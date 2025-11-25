@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Random User Explorer — Detailed Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Random User Explorer</h1>
+      <div class="controls">
+        <button id="reloadBtn" class="btn">🔄 Reload Users</button>
+        <select id="countSelect" class="select">
+          <option value="6">6 Users</option>
+          <option value="9" selected>9 Users</option>
+          <option value="12">12 Users</option>
+          <option value="18">18 Users</option>
+        </select>
+      </div>
+      <p id="status" class="status"></p>
+    </div>
+  </header>
+
+  <main>
+    <div id="users" class="users-grid" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
